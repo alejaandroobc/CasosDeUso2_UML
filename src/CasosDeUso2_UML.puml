@@ -1,8 +1,24 @@
 @startuml
-:Cliente Bancario: as C1
-:Cliente Corporativo: -|> C1
-:Cliente Normal: as C2
-C2 -|> C1
-note  right of C1: Actor antecesor
-note left of C2: Actor descendiente
+:Empleado: as A1
+:Administrador: as A2
+rectangle EmpresaPedidos {
+usecase UC1 as "Introducir Pedido"
+usecase UC2 as "Cancelar Pedido"
+usecase UC3 as "Obtener Estadi Pedido"
+usecase UC4 as "Borrar Pedido"
+usecase UC5 as "Buscar Pedidos"
+usecase UC6 as "Alta Cliente"
+usecase UC7 as "Buscar Cliente"
+usecase UC8 as "Nuevo Producto"
+usecase UC9 as "Borrara Producto"
+}
+A1 -- UC1
+A1 -- UC2
+A1 -- UC3
+A1 -- UC4
+A1 -- UC5
+A1 -- UC6
+A1 -- UC7
+A2 -- UC8
+A2 -- UC9
 @enduml
