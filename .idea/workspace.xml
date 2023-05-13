@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15c8e8b6-16c5-4217-af54-0c421bdb8f82" name="Changes" comment="Herencia con actores">
+    <list default="true" id="15c8e8b6-16c5-4217-af54-0c421bdb8f82" name="Changes" comment="Diagrama inicial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CasosDeUso2_UML.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/CasosDeUso2_UML.puml" afterDir="false" />
     </list>
@@ -49,7 +49,7 @@
       <workItem from="1683642102544" duration="2405000" />
       <workItem from="1683644538088" duration="443000" />
       <workItem from="1683652199222" duration="5000" />
-      <workItem from="1683992524922" duration="3554000" />
+      <workItem from="1683992524922" duration="4740000" />
     </task>
     <task id="LOCAL-00001" summary="Elementos">
       <created>1683992631519</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683995056279</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Diagrama inicial">
+      <created>1683996284095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683996284095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +131,7 @@
     <MESSAGE value="Relaciones de extensión" />
     <MESSAGE value="Herencia" />
     <MESSAGE value="Herencia con actores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Herencia con actores" />
+    <MESSAGE value="Diagrama inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Diagrama inicial" />
   </component>
 </project>

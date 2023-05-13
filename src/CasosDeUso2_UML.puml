@@ -1,24 +1,22 @@
 @startuml
 :Empleado: as A1
-:Administrador: as A2
-rectangle EmpresaPedidos {
 usecase UC1 as "Introducir Pedido"
 usecase UC2 as "Cancelar Pedido"
-usecase UC3 as "Obtener Estadi Pedido"
-usecase UC4 as "Borrar Pedido"
-usecase UC5 as "Buscar Pedidos"
-usecase UC6 as "Alta Cliente"
-usecase UC7 as "Buscar Cliente"
-usecase UC8 as "Nuevo Producto"
-usecase UC9 as "Borrara Producto"
-}
-A1 -- UC1
-A1 -- UC2
-A1 -- UC3
-A1 -- UC4
+usecase UC3 as "Obtener Estado Pedido"
+usecase UC4 as "Buscar Pedidos"
+usecase UC5 as "Alta Cliente"
+usecase UC6 as "Buscar Cliente"
+usecase UC7 as "Pago en cuenta"
+usecase UC8 as "Pago con tarjeta"
 A1 -- UC5
-A1 -- UC6
-A1 -- UC7
-A2 -- UC8
-A2 -- UC9
+A1 -- UC2
+A1 -- UC4
+A1 -- UC1
+A1 -- UC3
+UC5 .> UC1 : extiende
+UC8 .> UC1 : extiende
+UC3 .> UC4 : incluye
+UC1 .> UC6 : incluye
+UC7 .> UC1 : extiende
+UC2 .> UC4 : incluye
 @enduml
