@@ -1,8 +1,10 @@
 @startuml
 :Agente:
-usecase UC1 as "Evaluar Solicitud"
-usecase UC2 as "Solicitar Información adicional al cliente"
+usecase UC1 as "Enviar Solicitud crédito"
+Agente --> UC1
+usecase UC2 as "Enviar Solicitud crédito personal"
+UC2 -|> UC1
+usecase UC3 as "Enviar Solicitud crédito empresarial"
+UC3 -|> UC1
 
-Bibliotecario --> UC1
-UC2 .> UC1 :Si ingresos < 1000 <<extend>>
 @enduml
