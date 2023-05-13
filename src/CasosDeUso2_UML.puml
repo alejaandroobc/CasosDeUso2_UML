@@ -1,15 +1,8 @@
 @startuml
-:Socio:
 :Bibliotecario:
-rectangle Biblioteca{
-usecase UC1 as "Reservar Libro"
-usecase UC2 as "Prestar Libro"
-usecase UC3 as "Devolver Libro"
-usecase UC4 as "Actualizar Catálogo"
-}
-Socio -- UC1
-Socio -- UC2
-Socio -- UC3
-Bibliotecario -- UC2
-Bibliotecario -- UC4
+usecase UC1 as "Baja Socio"
+usecase UC2 as "Buscar Socio"
+
+Bibliotecario --> UC1
+UC1 .> UC2 :<<include>>
 @enduml
