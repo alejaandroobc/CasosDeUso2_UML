@@ -1,10 +1,8 @@
 @startuml
-:Agente:
-usecase UC1 as "Enviar Solicitud crédito"
-Agente --> UC1
-usecase UC2 as "Enviar Solicitud crédito personal"
-UC2 -|> UC1
-usecase UC3 as "Enviar Solicitud crédito empresarial"
-UC3 -|> UC1
-
+:Cliente Bancario: as C1
+:Cliente Corporativo: -|> C1
+:Cliente Normal: as C2
+C2 -|> C1
+note  right of C1: Actor antecesor
+note left of C2: Actor descendiente
 @enduml
