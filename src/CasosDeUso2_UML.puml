@@ -1,8 +1,8 @@
 @startuml
-:Bibliotecario:
-usecase UC1 as "Baja Socio"
-usecase UC2 as "Buscar Socio"
+:Agente:
+usecase UC1 as "Evaluar Solicitud"
+usecase UC2 as "Solicitar Información adicional al cliente"
 
 Bibliotecario --> UC1
-UC1 .> UC2 :<<include>>
+UC2 .> UC1 :<<extend>>
 @enduml
