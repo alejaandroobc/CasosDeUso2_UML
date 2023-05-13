@@ -1,0 +1,18 @@
+@startuml
+:Actor:
+:Actor2:
+rectangle sistema{
+usecase UC1 as "Caso de uso"
+usecase UC2 as "Caso de uso"
+usecase UC3 as "Caso de uso"
+}
+note left of sistema : Entorno del sistema
+note "Comunicación" as N1
+
+(Actor)-- N1
+N1 -- (UC1)
+Actor -- UC2
+Actor -- UC3
+Actor2 -- UC1
+Actor2 -- UC3
+@enduml
